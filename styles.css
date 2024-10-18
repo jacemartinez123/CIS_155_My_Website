@@ -1,0 +1,37 @@
+body{
+    color: #4169e1;
+    font-variant: small-caps;
+    font-size: 110%;
+}
+
+h1{
+    color: #228b22;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #228b22;
+}
+#intro{
+    font-weight: bold;
+}
+main li{
+    font-size: larger;
+    line-height: 2em;
+}
+h1{
+    font-weight: 200;
+}
+img{
+    float: right
+}
+
+/* For your CSS code:
+Use at least 1 of each of the following:
+A type selector - DONE
+An ID OR class selector - Done
+A relational selector - DONE
+Use only relative units of measurement - DONE
+Use Color to help comprehension - DONE
+Use at least 2 properties that style fonts */
