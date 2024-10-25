@@ -2,13 +2,14 @@ body{
     color: #4169e1;
     font-variant: small-caps;
     font-size: 110%;
-    background-image: -webkit-radial-gradient(edge 12);
+    background-image: url('Bones.jpg');
 }
 
 h1{
     color: #228b22;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
+    padding: 2em;
 }
 
 h2{
@@ -17,6 +18,7 @@ h2{
 }
 #intro{
     font-weight: bold;
+    border: 3px dashed #000000
 }
 main li{
     font-size: larger;
