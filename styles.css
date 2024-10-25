@@ -2,11 +2,13 @@ body{
     color: #4169e1;
     font-variant: small-caps;
     font-size: 110%;
+    background-image: -webkit-radial-gradient(edge 12);
 }
 
 h1{
     color: #228b22;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
 }
 
 h2{
@@ -20,9 +22,18 @@ main li{
     font-size: larger;
     line-height: 2em;
 }
-h1{
-    font-weight: 200;
-}
 img{
     float: right
+}
+#red{
+background-color: #ff0000;
+color: black;
+width: 20%;
+padding: 7em;
+}
+#green{
+background-color: #008000;
+color: black;
+width: 20%;
+padding: 3em;
 }
