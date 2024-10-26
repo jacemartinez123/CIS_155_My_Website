@@ -1,8 +1,9 @@
 body{
-    color: #4169e1;
+    color: #0b1002;
     font-variant: small-caps;
-    font-size: 110%;
+    font-size: 130%;
     background-image: url('Bones.jpg');
+    padding: 2em
 }
 
 h1{
