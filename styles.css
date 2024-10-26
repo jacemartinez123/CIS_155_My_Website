@@ -23,6 +23,7 @@ h2{
 main li{
     font-size: larger;
     line-height: 2em;
+    
 }
 img{
     float: right
@@ -31,11 +32,11 @@ img{
 background-color: #ff0000;
 color: black;
 width: 20%;
-padding: 7em;
+padding-bottom: 7em;
 }
 #green{
 background-color: #008000;
 color: black;
 width: 20%;
-padding: 3em;
+padding-right: 3em;
 }
