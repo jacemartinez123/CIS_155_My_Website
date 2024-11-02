@@ -50,3 +50,7 @@ ul.NewBone {list-style-image: url('NewBone.jpg');
 .link1{
 font-size: 5px;
 }
+
+.vertical-menu{
+    font-size: 20%;
+}
