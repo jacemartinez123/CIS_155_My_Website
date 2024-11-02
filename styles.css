@@ -44,3 +44,6 @@ padding-right: 3em;
 a{
     font-size: 10em;
 }
+
+ul.Bone {list-style-image: url('Bone.png');
+}
