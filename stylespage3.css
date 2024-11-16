@@ -9,14 +9,17 @@
         "footer";
     gap: 20px;
     padding: 20px;
+    background-color: #fff; /* White background to contrast with the rainbow sections */
 }
 
 /* Header */
 header {
     grid-area: header;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #FF0000; /* Red */
     padding: 10px;
+    color: white; /* White text */
+    border-radius: 10px;
 }
 
 /* Horizontal Navigation Menu */
@@ -25,9 +28,10 @@ header {
     justify-content: center;
     padding: 0;
     list-style: none;
-    background-color: #f4f4f4;
+    background-color: #FF7F00; /* Orange */
     margin: 0;
     grid-column: 1 / -1; /* Full width */
+    border-radius: 10px;
 }
 
 .horizontal-menu ul li {
@@ -37,12 +41,12 @@ header {
 .horizontal-menu ul li a {
     text-decoration: none;
     padding: 10px;
-    color: #000;
+    color: white; /* White text */
 }
 
 .horizontal-menu ul li a:hover {
-    background-color: #ddd;
-    color: #0077cc;
+    background-color: #FFFF00; /* Yellow on hover */
+    color: #FF0000; /* Red text on hover */
 }
 
 /* Content Section */
@@ -50,31 +54,37 @@ header {
     grid-area: content;
     padding: 20px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #45c057; /* Green */
+    color: white; /* White text */
+    border-radius: 10px;
 }
 
 /* Image Section */
 .image-container {
-    grid-area: content;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    height: auto; /* Ensure it adapts to the image */
+    background-color: #0000FF; /* Blue */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .responsive-image {
     width: 100%;
     max-width: 450px;
     height: auto;
+    border-radius: 10px;
 }
 
 /* Footer */
 footer {
     grid-area: footer;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #4B0082; /* Indigo */
     padding: 10px;
+    color: white;
+    border-radius: 10px;
 }
 
 /* Responsive Grid Layout */
@@ -88,6 +98,7 @@ footer {
     }
 
     .image-container {
+        grid-area: image; /* Assign the image to the 'image' grid area */
         text-align: left;
     }
 
