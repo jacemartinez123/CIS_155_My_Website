@@ -1,8 +1,8 @@
-/* Grid Layout for Page */
+/* Basic Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr; /* Single column layout on small screens */
-    grid-template-rows: auto 1fr auto; /* Header, content, and footer */
+    grid-template-columns: 1fr; /* Single column layout by default */
+    grid-template-rows: auto 1fr auto; /* Header, main content, and footer */
     grid-template-areas:
         "header"
         "content"
@@ -19,7 +19,7 @@ header {
     padding: 10px;
 }
 
-/* Navigation Menu */
+/* Horizontal Navigation Menu */
 .horizontal-menu ul {
     display: flex;
     justify-content: center;
@@ -45,21 +45,28 @@ header {
     color: #0077cc;
 }
 
-/* Image Section */
-.image-container {
-    grid-area: content;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Content Section */
 .content {
     grid-area: content;
     padding: 20px;
     text-align: center;
     background-color: #f9f9f9;
+}
+
+/* Image Section */
+.image-container {
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: auto; /* Ensure it adapts to the image */
+}
+
+.responsive-image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
 }
 
 /* Footer */
@@ -70,33 +77,21 @@ footer {
     padding: 10px;
 }
 
-/* Responsive Grid Adjustments */
+/* Responsive Grid Layout */
 @media (min-width: 600px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Two-column layout for larger screens */
+        grid-template-columns: 1fr 1fr; /* Two-column layout for larger screens */
         grid-template-areas:
             "header header"
-            "content image"
+            "image content"
             "footer footer";
     }
 
     .image-container {
-        display: block;
         text-align: left;
     }
-}
 
-.vertical-menu ul li {
-    margin: 5px 0;
-}
-
-.vertical-menu ul li a {
-    text-decoration: none;
-    padding: 10px;
-    color: #000;
-}
-
-.vertical-menu ul li a:hover {
-    background-color: #ddd;
-    color: #0077cc;
+    .content {
+        text-align: left;
+    }
 }

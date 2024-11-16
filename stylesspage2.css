@@ -1,62 +1,118 @@
-
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-image: url('Cat.jpg');
+    box-sizing: border-box;
 }
 
-.container {
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* White background for the page */
+    color: #333; /* Dark text for better readability */
+}
+
+/* Flex Layout for the Main Content */
+.flex-container {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
 }
 
-.column {
-    background-color: #f4f4f4;
-    border: 1px solid hsl(0, 78%, 2%);
+/* Header Styles */
+header {
+    text-align: center;
+    background-color: #222; /* Dark background for header */
+    color: #fff; /* White text in header */
     padding: 20px;
-    width: 30%;
+    border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-    .column {
-        width: 100%; /* Stack columns on small screens */
-        margin-bottom: 20px;
-    }
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
 }
-/* Horizontal Flex Container */
+
+/* Navigation Menu */
 .horizontal-menu ul {
-    display: flex; /* Set the list to be a flex container */
-    justify-content: space-around; /* Distribute space evenly between the items */
+    display: flex;
+    justify-content: center;
     padding: 0;
     list-style: none;
-    background-color: #f4f4f4;
+    background-color: #111; /* Dark background for the navbar */
+    margin: 0;
+    border-radius: 5px;
 }
 
 .horizontal-menu ul li {
-    margin: 0;
+    margin: 0 15px;
 }
 
 .horizontal-menu ul li a {
     text-decoration: none;
-    padding: 10px;
-    color: #000;
+    padding: 15px;
+    color: #fff; /* White text for links */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .horizontal-menu ul li a:hover {
-    background-color: #ddd;
-    color: #0077cc;
+    background-color: #444; /* Slightly lighter grey when hovered */
+    color: #fff;
 }
 
-/* Vertical Flex Container */
+/* Columns Layout */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f9f9f9; /* Light grey background for columns */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.column h2 {
+    font-size: 1.8em;
+    color: #222; /* Dark text for headings */
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for image */
+    margin-bottom: 15px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #222; /* Dark background for footer */
+    color: #fff; /* White text */
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Vertical Menu */
 .vertical-menu ul {
-    display: flex; /* Set the list to be a flex container */
-    flex-direction: column; /* Align the items vertically */
+    display: flex;
+    flex-direction: column;
     padding: 0;
     list-style: none;
-    background-color: #f4f4f4;
+    background-color: #222; /* Dark background for the vertical menu */
+    margin: 0;
     width: 200px;
+    border-radius: 5px;
 }
 
 .vertical-menu ul li {
@@ -65,11 +121,41 @@ body {
 
 .vertical-menu ul li a {
     text-decoration: none;
-    padding: 10px;
-    color: #000;
+    padding: 12px;
+    color: #fff; /* White text for links */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .vertical-menu ul li a:hover {
-    background-color: #ddd;
-    color: #0077cc;
+    background-color: #444; /* Slightly lighter grey when hovered */
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Stack the columns vertically on smaller screens */
+    .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        min-width: 100%; /* Columns will take full width on small screens */
+        margin-bottom: 20px;
+    }
+
+    .horizontal-menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .horizontal-menu ul li {
+        margin: 10px 0;
+    }
+
+    .vertical-menu ul {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
