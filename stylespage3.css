@@ -1,24 +1,23 @@
-/* Basic Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr; /* Single column layout by default */
-    grid-template-rows: auto 1fr auto; /* Header, main content, and footer */
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto 1fr auto; 
     grid-template-areas:
         "header"
         "content"
         "footer";
     gap: 20px;
     padding: 20px;
-    background-color: #fff; /* White background to contrast with the rainbow sections */
+    background-color: #fff; 
 }
 
 /* Header */
 header {
     grid-area: header;
     text-align: center;
-    background-color: #FF0000; /* Red */
+    background-color: #FF0000; 
     padding: 10px;
-    color: white; /* White text */
+    color: white; 
     border-radius: 10px;
 }
 
@@ -28,9 +27,9 @@ header {
     justify-content: center;
     padding: 0;
     list-style: none;
-    background-color: #FF7F00; /* Orange */
+    background-color: #FF7F00; 
     margin: 0;
-    grid-column: 1 / -1; /* Full width */
+    grid-column: 1 / -1; 
     border-radius: 10px;
 }
 
@@ -41,12 +40,12 @@ header {
 .horizontal-menu ul li a {
     text-decoration: none;
     padding: 10px;
-    color: white; /* White text */
+    color: white; 
 }
 
 .horizontal-menu ul li a:hover {
-    background-color: #FFFF00; /* Yellow on hover */
-    color: #FF0000; /* Red text on hover */
+    background-color: #FFFF00; 
+    color: #FF0000; 
 }
 
 /* Content Section */
@@ -54,8 +53,8 @@ header {
     grid-area: content;
     padding: 20px;
     text-align: center;
-    background-color: #45c057; /* Green */
-    color: white; /* White text */
+    background-color: #45c057; 
+    color: white; 
     border-radius: 10px;
 }
 
@@ -65,7 +64,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    background-color: #0000FF; /* Blue */
+    background-color: #0000FF; 
     padding: 20px;
     border-radius: 10px;
 }
@@ -81,7 +80,7 @@ header {
 footer {
     grid-area: footer;
     text-align: center;
-    background-color: #4B0082; /* Indigo */
+    background-color: #4B0082; 
     padding: 10px;
     color: white;
     border-radius: 10px;
@@ -90,7 +89,7 @@ footer {
 /* Responsive Grid Layout */
 @media (min-width: 600px) {
     .grid-container {
-        grid-template-columns: 1fr 1fr; /* Two-column layout for larger screens */
+        grid-template-columns: 1fr 1fr; 
         grid-template-areas:
             "header header"
             "image content"
@@ -98,7 +97,7 @@ footer {
     }
 
     .image-container {
-        grid-area: image; /* Assign the image to the 'image' grid area */
+        grid-area: image; 
         text-align: left;
     }
 

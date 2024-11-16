@@ -8,25 +8,25 @@
 /* Body Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fafafa; /* Light background for the body */
-    color: #333; /* Dark text for readability */
+    background-color: #fafafa; 
+    color: #333; 
 }
 
 /* Grid Layout for Page */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr; /* 3-column layout */
-    grid-template-rows: auto 1fr auto; /* Header, content, footer */
+    grid-template-rows: auto 1fr auto; 
     gap: 20px;
     padding: 20px;
 }
 
 /* Header Styles */
 header {
-    grid-column: 1 / -1; /* Header spans the full width */
+    grid-column: 1 / -1; 
     text-align: center;
-    background-color: #3e2723; /* Dark brown background */
-    color: #fff; /* White text */
+    background-color: #3e2723; 
+    color: #fff; 
     padding: 20px;
     border-radius: 10px;
 }
@@ -46,7 +46,7 @@ h2, h3 {
     justify-content: center;
     padding: 0;
     list-style: none;
-    background-color: #2e1b15; /* Dark brown background */
+    background-color: #2e1b15; 
     margin: 0;
     border-radius: 5px;
 }
@@ -58,22 +58,22 @@ h2, h3 {
 .horizontal-menu ul li a {
     text-decoration: none;
     padding: 15px;
-    color: #fff; /* White text for links */
+    color: #fff; 
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 .horizontal-menu ul li a:hover {
-    background-color: #5d4037; /* Lighter brown on hover */
+    background-color: #5d4037; 
 }
 
 /* Main Content Layout */
 .content {
-    grid-column: 2; /* Content takes the middle column */
-    background-color: #fff; /* White background for the content */
+    grid-column: 2; 
+    background-color: #fff; 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 #intro {
@@ -88,16 +88,16 @@ section {
 
 section h2 {
     font-size: 1.5em;
-    color: #3e2723; /* Dark brown for headings */
+    color: #3e2723; 
     margin-bottom: 10px;
 }
 
 #red {
-    color: #c62828; /* Red for dislikes section */
+    color: #c62828; 
 }
 
 #green {
-    color: #2e7d32; /* Green for likes section */
+    color: #2e7d32; 
 }
 
 /* Lists Styles */
@@ -112,7 +112,7 @@ ul li {
 }
 
 .NewBone li {
-    color: #c62828; /* Red for dislikes items */
+    color: #c62828; 
 }
 
 /* Vertical Menu */
@@ -121,7 +121,7 @@ ul li {
     flex-direction: column;
     padding: 0;
     list-style: none;
-    background-color: #2e1b15; /* Dark brown for vertical menu */
+    background-color: #2e1b15; 
     margin: 0;
     width: 200px;
     border-radius: 5px;
@@ -145,15 +145,15 @@ ul li {
 
 /* Image Container */
 .image-container {
-    grid-column: 1; /* Image is in the first column */
+    grid-column: 1; 
     text-align: center;
 }
 
 /* Footer Styles */
 footer {
-    grid-column: 1 / -1; /* Footer spans the full width */
+    grid-column: 1 / -1; 
     text-align: center;
-    background-color: #3e2723; /* Dark brown for footer */
+    background-color: #3e2723; 
     color: #fff;
     padding: 10px;
     margin-top: 20px;
@@ -164,7 +164,7 @@ footer {
 @media (max-width: 768px) {
     /* Stack the grid columns on smaller screens */
     .grid-container {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr; 
         grid-template-areas:
             "header"
             "content"
@@ -181,7 +181,7 @@ footer {
     }
 
     .vertical-menu ul {
-        width: 100%; /* Full width for vertical menu */
+        width: 100%; 
         margin-top: 20px;
     }
 

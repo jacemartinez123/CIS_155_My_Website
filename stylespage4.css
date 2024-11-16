@@ -1,10 +1,39 @@
-/* Horizontal Flex Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #FFB6C1; 
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Navigation Menu */
 .horizontal-menu ul {
-    display: flex; /* Set the list to be a flex container */
-    justify-content: space-around; /* Distribute space evenly between the items */
+    display: flex;
+    justify-content: center;
     padding: 0;
     list-style: none;
-    background-color: #f4f4f4;
+    background-color: #FF69B4; 
+    margin: 0;
+    border-radius: 10px;
 }
 
 .horizontal-menu ul li {
@@ -13,36 +42,67 @@
 
 .horizontal-menu ul li a {
     text-decoration: none;
-    padding: 10px;
-    color: #000;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .horizontal-menu ul li a:hover {
-    background-color: #ddd;
-    color: #0077cc;
+    background-color: #FF1493; 
+    color: #fff;
 }
 
-/* Vertical Flex Container */
-.vertical-menu ul {
-    display: flex; /* Set the list to be a flex container */
-    flex-direction: column; /* Align the items vertically */
-    padding: 0;
-    list-style: none;
-    background-color: #f4f4f4;
-    width: 200px;
+/* Grid Layout for Main Content */
+.grid-container {
+    grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+    grid-template-areas:
+        "column column"
+        "footer footer";
 }
 
-.vertical-menu ul li {
-    margin: 5px 0;
+.column {
+    background-color: #FFCCE5; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.vertical-menu ul li a {
-    text-decoration: none;
+.column h2 {
+    font-size: 1.8rem;
+    color: #FF1493; /* Deep Pink */
+}
+
+.column p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Image Styling */
+.column img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: #FF69B4; /* Hot Pink */
     padding: 10px;
-    color: #000;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
 }
 
-.vertical-menu ul li a:hover {
-    background-color: #ddd;
-    color: #0077cc;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    }
 }
