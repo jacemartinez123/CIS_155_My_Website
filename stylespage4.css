@@ -1,30 +1,3 @@
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('Cat.jpg');
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.column {
-    background-color: #f4f4f4;
-    border: 1px solid hsl(0, 78%, 2%);
-    padding: 20px;
-    width: 30%;
-}
-
-@media (max-width: 768px) {
-    .column {
-        width: 100%; /* Stack columns on small screens */
-        margin-bottom: 20px;
-    }
-}
 /* Horizontal Flex Container */
 .horizontal-menu ul {
     display: flex; /* Set the list to be a flex container */
