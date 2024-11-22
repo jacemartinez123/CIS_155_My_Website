@@ -106,3 +106,7 @@ footer {
         grid-template-columns: 1fr; /* Single column layout for smaller screens */
     }
 }
+body
+{
+    font-family: EduAUVICWANTPre;
+}
