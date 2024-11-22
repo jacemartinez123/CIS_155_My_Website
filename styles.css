@@ -190,9 +190,10 @@ footer {
         margin-bottom: 20px;
     }
 }
-.quintessential-regular {
-    font-family: "Quintessential", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+body
+{
+        font-family: "Quintessential", serif;
+        font-weight: 400;
+        font-style: normal;
+}
   
