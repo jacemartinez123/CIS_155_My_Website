@@ -111,10 +111,6 @@ ul li {
     font-size: 1.1em;
 }
 
-.NewBone li {
-    color: #c62828; 
-}
-
 /* Vertical Menu */
 .vertical-menu ul {
     display: flex;
@@ -196,4 +192,20 @@ body
         font-weight: 400;
         font-style: normal;
 }
-  
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    background-color: #fdf7f0; 
+    border: 2px solid #d4b89b; 
+    border-radius: 5px;
+}
+
+td {
+    border: 1px solid #d4b89b;
+    padding: 10px 15px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #5c4033;
+    font-size: 1rem;
+}
